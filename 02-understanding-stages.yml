@@ -36,6 +36,17 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
+      
+    
+    # - task: DownloadBuildArtifacts@1
+    #   inputs:
+    #     buildType: 'specific'
+    #     project: 'a7f3faac-7bde-4e42-85e5-216c74efe584'
+    #     pipeline: '4'
+    #     buildVersionToDownload: 'latest'
+    #     downloadType: 'single'
+    #     artifactName: 'new stage'
+    #     downloadPath: '$(System.ArtifactsDirectory)'
         #################################
   # - job: SecondJob
   #   steps:
