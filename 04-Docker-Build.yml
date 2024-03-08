@@ -24,7 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         containerRegistry: 'fredrick-docker-hub-connection'
-        repository: 'in26min/currency-exchange-devops'
+        repository: 'in28min-currency-exchange-devops'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
